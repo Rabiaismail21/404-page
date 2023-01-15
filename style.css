@@ -2,9 +2,9 @@
     --dark-gray: #333;
     --light-gray: #4f4f4f;
     --light: #bdbdbd;
-    --font-montserrat: 'Montserrat', sans-serif;
-    --font-spacemono: 'Space Mono', monospace;
-    --font-inconsolato: 'Inconsolata', monospace;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-spacemono: "Space Mono", monospace;
+    --font-inconsolato: "Inconsolata", monospace;
 }
 
 *,
@@ -36,16 +36,14 @@ header .alert {
     width: 90%;
     padding-top: 1rem;
     margin: 0 auto;
-    /* height: 90vh; */
+    min-height: 70vh;
     margin-top: 2rem;
-    padding: 1rem 0 1rem 0;
 }
 
 .flex {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 90%;
     justify-content: space-between;
 }
 
@@ -88,11 +86,16 @@ header .alert {
 }
 
 footer {
+    width: 90%;
     color: var(--light);
     font-size: 0.8rem;
     font-family: var(--font-montserrat);
-    text-align: center;
     font-weight: 400;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 footer span {
@@ -103,6 +106,7 @@ footer span {
 @media (max-width: 768px) {
     .main-content {
         width: 100%;
+        height: 100%;
     }
     .flex {
         flex-direction: column;
@@ -128,5 +132,6 @@ footer span {
     }
     footer {
         margin-top: 3rem;
+        align-items: center;
     }
 }
